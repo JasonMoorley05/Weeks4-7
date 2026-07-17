@@ -70,6 +70,7 @@ public class CueBall : MonoBehaviour
         GameObject ball15 = Instantiate(ballPrefab, new Vector3(-5, -0.8f, 0), Quaternion.identity);
         ballScript = ball15.GetComponent<Ball>();
         ballScript.SetupBall(15, new Color(0.8962264f, 0.4345364f, 0.06341223f));
+
     }
 
     // Update is called once per frame
