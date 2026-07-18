@@ -6,7 +6,9 @@ public class CueBall : MonoBehaviour
 {
     public GameObject ballPrefab;
 
+    float speed = 5f;
 
+    bool button = true;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -77,5 +79,15 @@ public class CueBall : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void SliderFunction(float s)
+    {
+        speed = s;
+    }
+
+    public void ButtonFunction()
+    {
+        button = !button;
     }
 }
